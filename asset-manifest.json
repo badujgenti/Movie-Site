@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "//badujgenti.github.io/Movie-Site/static/css/main.e2f2cd38.css",
-    "main.js": "//badujgenti.github.io/Movie-Site/static/js/main.e2a7f714.js",
-    "index.html": "//badujgenti.github.io/Movie-Site/index.html",
-    "main.e2f2cd38.css.map": "//badujgenti.github.io/Movie-Site/static/css/main.e2f2cd38.css.map",
-    "main.e2a7f714.js.map": "//badujgenti.github.io/Movie-Site/static/js/main.e2a7f714.js.map"
+    "main.css": "/Movie-Site/static/css/main.0b1bc9ed.css",
+    "main.js": "/Movie-Site/static/js/main.8d693925.js",
+    "index.html": "/Movie-Site/index.html",
+    "main.0b1bc9ed.css.map": "/Movie-Site/static/css/main.0b1bc9ed.css.map",
+    "main.8d693925.js.map": "/Movie-Site/static/js/main.8d693925.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2f2cd38.css",
-    "static/js/main.e2a7f714.js"
+    "static/css/main.0b1bc9ed.css",
+    "static/js/main.8d693925.js"
   ]
 }
