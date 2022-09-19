@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//badujgenti.github.io/Movie-Site/static/css/main.e2f2cd38.css",
+    "main.js": "//badujgenti.github.io/Movie-Site/static/js/main.e2a7f714.js",
+    "index.html": "//badujgenti.github.io/Movie-Site/index.html",
+    "main.e2f2cd38.css.map": "//badujgenti.github.io/Movie-Site/static/css/main.e2f2cd38.css.map",
+    "main.e2a7f714.js.map": "//badujgenti.github.io/Movie-Site/static/js/main.e2a7f714.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2f2cd38.css",
+    "static/js/main.e2a7f714.js"
+  ]
+}
