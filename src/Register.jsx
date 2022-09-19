@@ -16,7 +16,7 @@ export default function Register() {
     <Input type="password" placeholder="Repeat Password"/>
 
     <Button > <Link to="/home"> Create an account  </Link> </Button>
-    <p className="ml-7"> Already have an account? <Link to="/" className="text-[#FC4747]" > Login </Link> </p> 
+    <p className="text-center"> Already have an account? <Link to="/" className="text-[#FC4747]" > Login </Link> </p> 
 
     </div>
 

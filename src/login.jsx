@@ -16,7 +16,7 @@ const Login = () =>{
 
        
         <Button >  <Link to="/home">  Login to your account </Link> </Button>
-        <p className="ml-7"> Don’t have an account? <Link to="/register" className="text-[#FC4747]" > Sign up </Link> </p> 
+        <p className=" text-center"> Don’t have an account? <Link to="/register" className="text-[#FC4747]" > Sign up </Link> </p> 
         </div>
         </div>
 
