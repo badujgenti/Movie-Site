@@ -1,10 +1,11 @@
 import React from "react";
-import data from "./data.json";
+
 import Recomended from "./Recomended";
 import Home from "./Home";
 import Header from "./Header";
 import Search from "./Search";
-import { useState } from "react";
+import { useState , useContext } from "react";
+import { bookmarkContext } from "./App";
 
 const Movies = (props) => {
   const [search, setAfter] = useState("");
@@ -12,11 +13,15 @@ const Movies = (props) => {
     setAfter(text);
   };
 
-  let filteredArray = data.filter(
+
+  const [movies] = useContext(bookmarkContext)
+
+  let filteredArray = movies.filter(
     (movie) =>
       movie.category === "Movie" &&
       movie.title.toLowerCase().includes(search.toLowerCase())
   );
+
 
   return (
     <div>

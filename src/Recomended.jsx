@@ -1,12 +1,29 @@
 import React from 'react';
+import { useContext } from 'react';
 import { useState } from 'react';
-import data from "./data.json";
+import { bookmarkContext } from './App';
+
+
 
 export default function Recomended(props) {
-    const [marked, setMarked] = useState(props.data.isBookmarked)
+   let marked = props.data.isBookmarked
+    const [movies,setMovies] = useContext(bookmarkContext)
+   
 
     const bookMarkClick = () => {
-        setMarked(!marked)
+        const moviesCopy = [...movies]
+        let moviesBookmarked ;
+        for(let i=0 ; i < moviesCopy.length; i++){
+            if(moviesCopy[i].title === props.data.title){
+                moviesCopy[i].isBookmarked = !moviesCopy[i].isBookmarked
+                
+            }
+            
+        }
+        
+        setMovies(moviesCopy)
+
+        
     }
     let bookmarkIcon ;
     if(marked ){

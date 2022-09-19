@@ -1,14 +1,15 @@
-import React from "react";
-import data from "./data.json";
+import React  from "react";
 import Trending from "./Trending";
 import Recomended from "./Recomended";
 import Movies from "./Movies";
 import Search from "./Search";
-import { useState } from "react";
+import { useState , useContext } from "react";
+import { bookmarkContext } from "./App";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
-
 import Header from "./Header";
+
+
 
 export default function Home() {
   const [search, setAfter] = useState("");
@@ -16,9 +17,14 @@ export default function Home() {
     setAfter(text);
   };
 
-  let filteredArray = data.filter((movie) =>
+  const [movies] = useContext(bookmarkContext)
+  
+
+
+  let filteredArray = movies.filter((movie) =>
     movie.title.toLowerCase().includes(search.toLowerCase())
   );
+
   return (
     <div>
       <Header />
@@ -56,7 +62,7 @@ export default function Home() {
           }}
           aria-label="Trending Movies"
         >
-          {data.filter((movie) => movie.isTrending)
+          {movies.filter((movie) => movie.isTrending)
             .map((movie, index) => (
               <SplideSlide key={index}>
                 <Trending data={movie} />
