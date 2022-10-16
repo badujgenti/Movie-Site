@@ -1,6 +1,6 @@
 import React , { createContext, useState }from 'react';
 import './index.css';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, HashRouter } from 'react-router-dom';
 import Register from './Register';
 import Login from './login';
 import Home from './Home';
@@ -17,7 +17,7 @@ const [movies, setMovies] = useState(data);
     return  <React.StrictMode>
     <bookmarkContext.Provider value={[movies, setMovies]}>
         
-  <BrowserRouter>
+  <HashRouter>
       <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/register' element={<Register/>} />
@@ -27,7 +27,7 @@ const [movies, setMovies] = useState(data);
           <Route path='/bookmarked' element={<Bookmarked/>}/>
           
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   </bookmarkContext.Provider>
 </React.StrictMode>
 }
